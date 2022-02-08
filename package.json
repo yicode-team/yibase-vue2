@@ -1,0 +1,33 @@
+{
+    "name": "yipack-template-web",
+    "version": "1.0.0",
+    "description": "yicode web单页应用通用模板",
+    "main": "index.js",
+    "scripts": {
+        "postinstall": "husky install"
+    },
+    "keywords": [
+        "yicode",
+        "yicode-cli",
+        "yicode template",
+        "demo",
+        "template",
+        "example"
+    ],
+    "author": "chensuiyi <bimostyle@qq.com>",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "0.24.0",
+        "basil.js": "^0.4.11",
+        "lodash": "^4.17.21",
+        "vue": "^2.6.14",
+        "vue-i18n": "^8.26.7",
+        "vue-router": "^3.5.3",
+        "vuex": "^3.6.2"
+    },
+    "devDependencies": {
+        "husky": "7.0.4",
+        "lint-staged": "12.0.2",
+        "prettier": "^2.4.1"
+    }
+}
