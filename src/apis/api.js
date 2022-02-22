@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import axios from 'axios';
-import basil from '@/plugins/basil.js';
+import $Storage from '@/plugins/storage.js';
 // =============================================
 // TODO: 将无效参数的过滤封装到这里，由用户进行控制
 // TODO: 此处封装统一弹框
@@ -20,17 +20,6 @@ let request = axios.create({
 // 添加请求拦截器
 request.interceptors.request.use(
     function (config) {
-        /**
-         * 请求拦截，以下仅为示例，请根据项目需求调整。
-         * 在发送请求之前做些什么
-         */
-
-        // config.headers.Authorization = 'Bearer ' + yue.storage.get('token');
-        // let token = basil.get('token');
-        // if (token) {
-        //     config.headers.Authorization = basil.get('token');
-        // }
-
         return config;
     },
     function (error) {

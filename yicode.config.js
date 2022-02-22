@@ -1,6 +1,5 @@
 // 插件参数配置，用于控制
 module.exports = {
-    projectType: 'vue-single',
     // 自适应配置
     px2viewport: {
         enable: false

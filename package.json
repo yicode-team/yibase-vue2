@@ -1,7 +1,7 @@
 {
-    "name": "yipack-template-web",
+    "name": "yipack-template-vue2-base",
     "version": "1.0.0",
-    "description": "yicode web单页应用通用模板",
+    "description": "基于 yicode + vue2 的项目基础模板",
     "main": "index.js",
     "scripts": {
         "postinstall": "husky install"
@@ -15,19 +15,20 @@
         "example"
     ],
     "author": "chensuiyi <bimostyle@qq.com>",
-    "license": "MIT",
+    "license": "Apache 2.0",
     "dependencies": {
-        "axios": "0.24.0",
-        "basil.js": "^0.4.11",
+        "axios": "^0.26.0",
         "lodash": "^4.17.21",
+        "store2": "^2.13.1",
         "vue": "^2.6.14",
-        "vue-i18n": "^8.26.7",
+        "vue-i18n": "8.27.0",
         "vue-router": "^3.5.3",
-        "vuex": "^3.6.2"
+        "vuex": "^3.6.2",
+        "yidash": "^1.0.11"
     },
     "devDependencies": {
         "husky": "7.0.4",
-        "lint-staged": "12.0.2",
-        "prettier": "^2.4.1"
+        "lint-staged": "12.3.4",
+        "prettier": "^2.5.1"
     }
 }

@@ -1,22 +1,6 @@
 <template>
-    <div class="page-index">
-        page-index
-        {{ $t('name') }}
-    </div>
+    <div class="page-index">page-index</div>
 </template>
-
-<route>
-{
-    path: '/',
-    component: () => import('@/layout/default/index.vue'),
-    children: [
-        {
-            path: '/',
-            component: () => import('@/pages/index.vue')
-        }
-    ]
-}
-</route>
 
 <script>
 export default {
@@ -28,7 +12,6 @@ export default {
     created() {},
     mounted() {},
     methods: {
-        // 简单事件中心
         on() {}
     }
 };

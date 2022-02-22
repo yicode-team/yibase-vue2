@@ -3,21 +3,24 @@ import Vuex from 'vuex';
 
 Vue.mixin({
     data() {
-        return {
-            ddd: 1
-        };
+        return {};
     },
     computed: {
         ...Vuex.mapState([])
     },
     methods: {
         // 通用突变
-        ...Vuex.mapMutations(['YiMutation']),
-        // 通用动作
-        ...Vuex.mapActions(['YiAction']),
-        // 公共跳转封装
-        goUrl(options) {
-            this.$router.push(options);
+        ...Vuex.mapMutations(['$Commit']),
+        // 触发父级
+        async onParent(obj) {
+            // 修改data数据
+            _.forOwn(obj.data, (value, key) => {
+                _.set(this, key, value);
+            });
+
+            _.forEach(obj.method, (funcName) => {
+                this[funcName]();
+            });
         }
     }
 });
