@@ -6,7 +6,7 @@ Vue.mixin({
         return {};
     },
     computed: {
-        ...Vuex.mapState([])
+        ...Vuex.mapState(['globalData'])
     },
     methods: {
         // 通用突变
