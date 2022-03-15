@@ -1,11 +1,17 @@
 <template>
-    <div class="page-index">page-index</div>
+    <div class="page-index">
+        page-index444
+        <CompT1></CompT1>
+    </div>
 </template>
 
 <script>
+import CompT1 from './components/t1.vue';
 export default {
     name: 'Index',
-    components: {},
+    components: {
+        CompT1
+    },
     data() {
         return {};
     },
