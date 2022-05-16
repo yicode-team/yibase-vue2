@@ -31,8 +31,7 @@ request.interceptors.request.use(
 // 添加响应拦截器
 request.interceptors.response.use(
     function (res) {
-        Promise.resolve(res.data);
-        return;
+        return Promise.resolve(res.data);
 
         /**
          * 响应拦截，以下仅为示例，请根据项目需求调整。

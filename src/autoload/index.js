@@ -3,7 +3,7 @@
 // =====================================================
 let _ = require('lodash');
 let importAll = require.context('@/autoload', true, /^\.\/(?!index).+\.js$/);
-let sortData = ['directive', 'filter', 'api', 'mixin', 'component', 'plugin'].map((str) => {
+let sortData = ['directive', 'filter', 'mixin', 'component', 'plugin'].map((str) => {
     return ['./', str, '.js'].join('');
 });
 //
