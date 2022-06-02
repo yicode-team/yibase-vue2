@@ -9,6 +9,7 @@ specifiers:
     store2: ^2.13.2
     vue: ^2.6.14
     vue-i18n: 8.27.0
+    vue-meta: ^2.4.0
     vue-router: ^3.5.3
     vuex: ^3.6.2
     yidash: ^1.0.12
@@ -19,6 +20,7 @@ dependencies:
     store2: 2.13.2
     vue: 2.6.14
     vue-i18n: 8.27.0
+    vue-meta: 2.4.0
     vue-router: 3.5.3
     vuex: 3.6.2_vue@2.6.14
     yidash: 1.0.12
@@ -192,6 +194,11 @@ packages:
             ms: 2.1.2
             supports-color: 9.2.2
         dev: true
+
+    /deepmerge/4.2.2:
+        resolution: { integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg== }
+        engines: { node: '>=0.10.0' }
+        dev: false
 
     /delayed-stream/1.0.0:
         resolution: { integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ== }
@@ -583,6 +590,12 @@ packages:
 
     /vue-i18n/8.27.0:
         resolution: { integrity: sha512-SX35iJHL5PJ4Gfh0Mo/q0shyHiI2V6Zkh51c+k8E9O1RKv5BQyYrCxRzpvPrsIOJEnLaeiovet3dsUB0e/kDzw== }
+        dev: false
+
+    /vue-meta/2.4.0:
+        resolution: { integrity: sha512-XEeZUmlVeODclAjCNpWDnjgw+t3WA6gdzs6ENoIAgwO1J1d5p1tezDhtteLUFwcaQaTtayRrsx7GL6oXp/m2Jw== }
+        dependencies:
+            deepmerge: 4.2.2
         dev: false
 
     /vue-router/3.5.3:
