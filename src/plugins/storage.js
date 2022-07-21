@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import $Storage from 'store2';
-$Storage.namespace(YICODE_ENV.namespace);
+$Storage.namespace(import.meta.env.namespace);
 
 // 给页面直接调用
 Vue.prototype.$Storage = $Storage;

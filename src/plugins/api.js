@@ -6,7 +6,7 @@ import $Storage from '@/plugins/storage.js';
 // TODO: 此处封装统一弹框
 let request = axios.create({
     method: 'get',
-    baseURL: YICODE_ENV.host,
+    baseURL: import.meta.env.host,
     timeout: 1000 * 60,
     withCredentials: false,
     // responseType: "json",
