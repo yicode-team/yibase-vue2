@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import _ from 'lodash';
+import { set as _set } from 'lodash-es';
 Vue.use(Vuex);
 const store = new Vuex.Store({
     state: {
@@ -9,7 +9,7 @@ const store = new Vuex.Store({
     mutations: {
         // 通用提交方法
         $Commit(state, payload) {
-            _.set(state, payload.path, payload.data);
+            _set(state, payload.path, payload.data);
         }
     }
 });
